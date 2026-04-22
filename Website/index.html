@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kevin Rovira</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Kevin Rovira</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="mascotas.html">Mascotas</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>Sobre mi</h2>
+
+        <p id="about-text">
+            Soy estudiante de desarrollo web. Me interesa crear sitios funcionales
+            y bien estructurados. Actualmente aprendiendo HTML, CSS y JavaScript.
+        </p>
+
+        <div style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:1rem;">
+            <button id="btn-welcome">Saludar</button>
+            <button id="btn-toggle-about">Actualizar texto</button>
+        </div>
+
+        <div id="welcome-msg">
+            Bienvenido a mi portafolio.
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section alt">
+    <div class="container">
+        <h2>Proyectos</h2>
+
+        <div class="projects-grid">
+
+            <a href="https://www.roblox.com/es/communities/477981/speedKills#!/about"
+               target="_blank" class="project-link">
+                <div class="card">
+                    <img src="https://tr.rbxcdn.com/180DAY-d833ddc2cd5a4cf04b66fc61a6a63176/1440/456/Image/Png/noFilter"
+                         alt="Juego Roblox">
+                    <h3>SpeedKills</h3>
+                    <p>Juego desarrollado en Roblox con mecanicas propias.</p>
+                </div>
+            </a>
+
+            <a href="#" class="project-link">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80"
+                         alt="Proyecto Web">
+                    <h3>Portafolio Web</h3>
+                    <p>Este portafolio construido con HTML, CSS y JavaScript.</p>
+                </div>
+            </a>
+
+            <a href="#" class="project-link">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80"
+                         alt="Proyecto Codigo">
+                    <h3>Experimentos CSS</h3>
+                    <p>Practicas con CSS y animaciones.</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contacto</h2>
+
+        <button id="btn-toggle-contact" style="margin-bottom:1rem;">
+            Ocultar formulario
+        </button>
+
+        <form id="contact-form">
+            <input type="text"  placeholder="Nombre"             required>
+            <input type="email" placeholder="Correo electronico" required>
+            <input type="text"  placeholder="Asunto"             required>
+            <textarea           placeholder="Mensaje"            required rows="4"></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    Kevin Rovira (Portafolio) 
+</footer>
+
+<script src="Scripts/script.js"></script>
+</body>
+</html>
